@@ -73,6 +73,7 @@
      </nav>
     </header>
     <p id="notice">
+    <%= render 'searchs/form', search: @search %>
     <% flash.each do |message_type, message| %>
       <%= message %>
     <% end %>
