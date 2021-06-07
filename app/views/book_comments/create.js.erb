@@ -1,2 +1,4 @@
 $(".comments").html("<%= j(render 'book_comments/book', book: @books) %>");
+$(".comments1").html("<%= j(render 'book_comments/book1', book: @books) %>");
 $(".newcomment").html("<%= j(render "book_comments/book", book: @books, comment: @comment_new) %>");
+$("textarea").val('')
