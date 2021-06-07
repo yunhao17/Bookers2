@@ -1,2 +1,2 @@
 $(".comments").html("<%= j(render 'book_comments/book', book: @books) %>");
-$(".newcomment").html("<%= escape_javascript(render "book_comments/book", book: @books, comment: @comment_new) %>");
+$(".newcomment").html("<%= j(render "book_comments/book", book: @books, comment: @comment_new) %>");
