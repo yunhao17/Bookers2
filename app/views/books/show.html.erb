@@ -22,6 +22,7 @@
                          <td class="comments1">
                             <%= render 'book_comments/book1', book: @books %> 
                          </td>
+                         <td>閲覧数：<%= @books.impressionist_count %></td>
                          <% if @books.user.id == current_user.id %>
                          <td><%= link_to "Edit", edit_book_path(@books) , class:"btn btn-sm btn-success"%></td>
                          <td>

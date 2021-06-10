@@ -43,6 +43,8 @@ class User < ApplicationRecord
     end
   end
   
+  is_impressionable counter_cache: true
+  
   attachment :profile_image
   
   validates :name, uniqueness: true
